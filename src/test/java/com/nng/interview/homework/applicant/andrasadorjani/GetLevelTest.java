@@ -20,7 +20,7 @@ public class GetLevelTest {
      */
     @Test(expected = NullPointerException.class)
     public void testPreconditionsNullRoot () {
-        DoGetLevel<Integer> instance = DoGetLevel.newInstance();
+        DoGetLevel<Integer> instance = GetLevel.newInstance();
 
         // call the getLevel method with null root node
         instance.getLevel(null, 0);
@@ -33,7 +33,7 @@ public class GetLevelTest {
      */
     @Test(expected = IllegalArgumentException.class)
     public void testPreconditionsInvalidLevel () {
-        DoGetLevel<Integer> instance = DoGetLevel.newInstance();
+        DoGetLevel<Integer> instance = GetLevel.newInstance();
 
         // call the getLevel method with an invalid level argument
         instance.getLevel(new TreeNode<Integer>(1), -1);
@@ -45,7 +45,7 @@ public class GetLevelTest {
      */
     @Test
     public void testWithExistingLevel () {
-        DoGetLevel<Integer> instance = DoGetLevel.newInstance();
+        DoGetLevel<Integer> instance = GetLevel.newInstance();
 
         /**
          * test results on level from the test tree
@@ -64,7 +64,7 @@ public class GetLevelTest {
      */
     @Test
     public void testWithNonExistingLevel () {
-        DoGetLevel<Integer> instance = DoGetLevel.newInstance();
+        DoGetLevel<Integer> instance = GetLevel.newInstance();
 
         ListItem<Integer> result;
         // get results on level 0 from the test tree
