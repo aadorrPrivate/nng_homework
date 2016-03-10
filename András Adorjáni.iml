@@ -11,9 +11,18 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="nng-interview-homework-exercise-1.0.2-GetLevel (2)" level="project" />
+    <orderEntry type="module-library">
+      <library name="Maven: com.nng.interview.homework.applicant:nng:excersie">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/lib/nng-interview-homework-exercise-1.0.2-GetLevel.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Maven: com.google.guava:guava:19.0-rc2" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
-    <orderEntry type="library" name="Maven: com:nng:1.0" level="project" />
-    <orderEntry type="library" name="nng-interview-homework-exercise-1.0.2-GetLevel (2)" level="project" />
   </component>
 </module>
