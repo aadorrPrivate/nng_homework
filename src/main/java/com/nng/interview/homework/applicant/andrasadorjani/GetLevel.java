@@ -10,9 +10,16 @@ import java.util.Queue;
 
 /**
  * Created by u95425 on 2016.03.08.
+ * The class implements the getLevel service
  */
 public class GetLevel<T extends Comparable<T>> extends DoGetLevel<T> {
 
+    /**
+     * Query the nodes in a binary tree on a given level
+     * @param treeNode The root of the binary tree
+     * @param i the sequence number of the level in question. 0 is the level of the root element
+     * @return A linked list containing the elements on a given level
+     */
     @Override
     public ListItem<T> getLevel(TreeNode<T> treeNode, int i) {
 

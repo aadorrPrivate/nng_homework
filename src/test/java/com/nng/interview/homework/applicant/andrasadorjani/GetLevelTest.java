@@ -40,17 +40,17 @@ public class GetLevelTest {
     }
 
     /**
-     * Tests whether the result containing all nodes fulfilling the conditions on a given level
+     * Tests whether the result containing all nodes on a given level
      * The test data should be correctly set in class TestTreeData
+     * Tests on all available level
      */
     @Test
-    public void testWithExistingLevel () {
+    public void testAllLevels() {
         DoGetLevel<Integer> instance = new GetLevel<Integer>();
 
         /**
          * test results on level from the test tree
          */
-
         ListItem<Integer> result;
         for (Integer level : TestTreeData.nodesOnLevel.keySet()) {
             result = instance.getLevel(TestTreeData.testTree, level);
@@ -88,7 +88,8 @@ public class GetLevelTest {
         ArrayList<Integer> nodesListOnLevel = TestTreeData.nodesOnLevel.get(level);
         ListItem<Integer> temp = result;
         for (Integer nodeData : nodesListOnLevel) {
-            assertEquals(nodeData, temp.getData());
+            assertNotNull("Missing element from result on level: " + level, temp);
+            assertEquals("tested level: " + level, nodeData, temp.getData());
             temp = temp.getNext();
         }
     }
